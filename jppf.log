@@ -1,0 +1,160 @@
+2024-11-07 12:52:45,344 [DEBUG][org.jppf.utils.JPPFConfiguration.getConfigurationReader(125)]: reading JPPF configuration file: jppf.properties
+2024-11-07 12:52:45,358 [DEBUG][org.jppf.client.AbstractJPPFClient.<init>(104)]: Instantiating JPPF client with uuid=1ABFFA5E-5B44-7DD6-828E-525608589B73
+2024-11-07 12:52:45,421 [DEBUG][org.jppf.utils.NetworkUtils.getPID(345)]: process name=9112@Swoots-PC, pid=9112
+2024-11-07 12:52:45,421 [INFO ][org.jppf.utils.VersionUtils.logVersionInformation(80)]: --------------------------------------------------------------------------------
+2024-11-07 12:52:45,421 [INFO ][org.jppf.utils.VersionUtils.logVersionInformation(81)]: JPPF Version: 5.0.1, Build number: 1455, Build date: 2015-04-03 08:24 CEST
+2024-11-07 12:52:45,421 [INFO ][org.jppf.utils.VersionUtils.logVersionInformation(82)]: starting client with PID=9112, UUID=1ABFFA5E-5B44-7DD6-828E-525608589B73
+2024-11-07 12:52:45,421 [INFO ][org.jppf.utils.VersionUtils.logVersionInformation(83)]: --------------------------------------------------------------------------------
+2024-11-07 12:52:45,422 [DEBUG][org.jppf.utils.NetworkUtils.getPID(345)]: process name=9112@Swoots-PC, pid=9112
+2024-11-07 12:52:45,427 [DEBUG][org.jppf.client.AbstractGenericClient.initPools(145)]: initializing connections
+2024-11-07 12:52:45,430 [DEBUG][org.jppf.client.AbstractGenericClient.initRemotePools(191)]: found peers in the configuration
+2024-11-07 12:52:45,430 [DEBUG][org.jppf.client.AbstractGenericClient.initRemotePools(194)]: list of drivers: driver1
+2024-11-07 12:52:45,433 [DEBUG][org.jppf.client.AbstractGenericClient.newConnection(234)]: new connection: driver1
+2024-11-07 12:52:45,438 [DEBUG][org.jppf.client.JPPFClient.submitJob(106)]: submitting job JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=0, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:52:45,446 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.<init>(121)]: using default properties: CLIENT{jppf.load.balancing.profile.jppf.size=1000000, jppf.load.balancing.algorithm=manual, jppf.script.default.language=javascript, jppf.load.balancing.profile=jppf}
+2024-11-07 12:52:45,447 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.createBundlerFromJPPFConfiguration(161)]: load balancing configuration using algorithm 'manual' with parameters: {size=1000000}
+2024-11-07 12:52:45,447 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(195)]: oldCL=sun.misc.Launcher$AppClassLoader@18b4aac2, currentCL=sun.misc.Launcher$AppClassLoader@18b4aac2
+2024-11-07 12:52:45,447 [DEBUG][org.jppf.client.AbstractGenericClient.run(246)]: 'localhost' was resolved into 'localhost'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(203)]: registering new load-balancing algorithm provider 'rl'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(203)]: registering new load-balancing algorithm provider 'proportional'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(203)]: registering new load-balancing algorithm provider 'autotuned'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(203)]: registering new load-balancing algorithm provider 'manual'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(203)]: registering new load-balancing algorithm provider 'nodethreads'
+2024-11-07 12:52:45,450 [DEBUG][org.jppf.load.balancer.spi.JPPFBundlerFactory.loadProviders(205)]: found 5 load-balancing algorithms in the classpath
+2024-11-07 12:52:45,453 [DEBUG][org.jppf.client.AbstractConnectionPool.add(78)]: adding driver1-1[localhost:11111] : CREATED to JPPFConnectionPool[name=driver1, id=1, coreSize=1, maxSize=1, priority=10, sslEnabled=false, client=org.jppf.client.JPPFClient@676b4ee6]
+2024-11-07 12:52:45,453 [INFO ][org.jppf.client.AbstractGenericClient.newConnection(287)]: connection [driver1-1] created
+2024-11-07 12:52:45,453 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from CREATED to NEW
+2024-11-07 12:52:45,457 [DEBUG][org.jppf.scheduling.JPPFScheduleHandler.createExecutor(160)]: created executor with name=Job Schedule Handler
+2024-11-07 12:52:45,458 [DEBUG][org.jppf.scheduling.JPPFScheduleHandler.createExecutor(160)]: created executor with name=Job Expiration Handler
+2024-11-07 12:52:45,461 [DEBUG][org.jppf.client.ConnectionInitializer.run(53)]: initializing driver connection 'driver1-1[localhost:11111] : NEW'
+2024-11-07 12:52:45,462 [DEBUG][org.jppf.client.balancer.JobManagerClient.addConnection(170)]: adding connection driver1-1[localhost:11111] : NEW
+2024-11-07 12:52:45,462 [DEBUG][org.jppf.client.balancer.AbstractClientJob.<init>(115)]: creating ClientJob #1
+2024-11-07 12:52:45,464 [DEBUG][org.jppf.classloader.ResourceProvider$Factory.initResourceProvider(127)]: jppf.resource.provider.class = org.jppf.classloader.ResourceProviderImpl
+2024-11-07 12:52:45,464 [DEBUG][org.jppf.client.AbstractClassServerDelegate.<init>(75)]: resourceProvider=org.jppf.classloader.ResourceProviderImpl@533ef8fe
+2024-11-07 12:52:45,464 [DEBUG][org.jppf.client.JPPFResultCollector.setStatus(109)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] status changing from 'SUBMITTED' to 'PENDING'
+2024-11-07 12:52:45,465 [DEBUG][org.jppf.client.JPPFResultCollector.fireStatusChangeEvent(144)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] fire status changed event for 'PENDING'
+2024-11-07 12:52:45,465 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.addBundle(111)]: adding bundle with ClientJob[job=JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=0, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc], jobStatus=PENDING, broadcastUUID=null, executing=false, nbTasks=10]
+2024-11-07 12:52:45,465 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - ClassServer' status changing from NEW to CONNECTING
+2024-11-07 12:52:45,467 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.addBundle(118)]: Maps size information: priorityMap[shallow size=1, total elements=1] - sizeMap[shallow size=1, total elements=1]
+2024-11-07 12:52:45,467 [INFO ][org.jppf.client.ClassServerDelegateImpl.init(77)]: [client: driver1-1 - ClassServer] Attempting connection to the class server at localhost:11111
+2024-11-07 12:52:45,468 [DEBUG][org.jppf.comm.socket.SocketInitializerImpl.initializeSocket(69)]: SocketInitializerImpl[localhost:11111] about to close socket wrapper
+2024-11-07 12:52:45,778 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:lo (Software Loopback Interface 1)
+2024-11-07 12:52:45,778 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth0 (VirtualBox Host-Only Ethernet Adapter #2)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth2 (VirtualBox Host-Only Ethernet Adapter #3)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth4 (VirtualBox Host-Only Ethernet Adapter)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:net4 (Microsoft Teredo Tunneling Adapter)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth7 (TunnelBear Adapter V9)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:net5 (PolarBear Tunnel)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth9 (Realtek PCIe GbE Family Controller)
+2024-11-07 12:52:45,779 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth10 (Famatech Radmin VPN Ethernet Adapter)
+2024-11-07 12:52:45,780 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth11 (Bluetooth Device (Personal Area Network))
+2024-11-07 12:52:45,780 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth12 (VirtualBox Host-Only Ethernet Adapter)
+2024-11-07 12:52:46,475 [DEBUG][org.jppf.comm.socket.AbstractSocketWrapper.open(284)]: getReceiveBufferSize() = 131072
+2024-11-07 12:52:46,475 [INFO ][org.jppf.client.ClassServerDelegateImpl.init(85)]: [client: driver1-1 - ClassServer] Reconnected to the class server
+2024-11-07 12:52:46,475 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - ClassServer' status changing from CONNECTING to ACTIVE
+2024-11-07 12:52:46,475 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - TasksServer' status changing from NEW to CONNECTING
+2024-11-07 12:52:46,476 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from NEW to CONNECTING
+2024-11-07 12:52:46,476 [DEBUG][org.jppf.client.AbstractClassServerDelegate.handshake(133)]: [driver1-1 - ClassServer] : sending channel identifier
+2024-11-07 12:52:46,476 [DEBUG][org.jppf.client.AbstractClassServerDelegate.handshake(136)]: [driver1-1 - ClassServer] : sending initial resource
+2024-11-07 12:52:46,479 [DEBUG][org.jppf.serialization.JPPFSerialization$Factory.init(80)]: found jppf.object.serialization.class = null
+2024-11-07 12:52:46,479 [DEBUG][org.jppf.serialization.JPPFSerialization$Factory.init(93)]: using DefaultJavaSerialization
+2024-11-07 12:52:46,484 [DEBUG][org.jppf.io.IOHelper.createDefaultSerializer(394)]: Loaded serializer class class org.jppf.utils.ObjectSerializerImpl
+2024-11-07 12:52:46,493 [DEBUG][org.jppf.client.AbstractClassServerDelegate.writeResource(125)]: [driver1-1 - ClassServer] data sent to the server
+2024-11-07 12:52:46,494 [DEBUG][org.jppf.client.AbstractClassServerDelegate.readResource(113)]: [driver1-1 - ClassServer] reading next resource ...
+2024-11-07 12:52:46,553 [DEBUG][org.jppf.client.AbstractClassServerDelegate.handshake(145)]: [driver1-1 - ClassServer] : server handshake done
+2024-11-07 12:52:46,553 [DEBUG][org.jppf.client.AbstractClassServerDelegate.readResource(113)]: [driver1-1 - ClassServer] reading next resource ...
+2024-11-07 12:53:22,366 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:lo (Software Loopback Interface 1)
+2024-11-07 12:53:22,366 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth0 (VirtualBox Host-Only Ethernet Adapter #2)
+2024-11-07 12:53:22,367 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth2 (VirtualBox Host-Only Ethernet Adapter #3)
+2024-11-07 12:53:22,367 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth4 (VirtualBox Host-Only Ethernet Adapter)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:net4 (Microsoft Teredo Tunneling Adapter)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth7 (TunnelBear Adapter V9)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:net5 (PolarBear Tunnel)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth9 (Realtek PCIe GbE Family Controller)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth10 (Famatech Radmin VPN Ethernet Adapter)
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth11 (Bluetooth Device (Personal Area Network))
+2024-11-07 12:53:22,368 [DEBUG][org.jppf.utils.NetworkUtils.getIPAddresses(132)]: found network interface: name:eth12 (VirtualBox Host-Only Ethernet Adapter)
+2024-11-07 12:53:34,241 [DEBUG][org.jppf.client.balancer.JobManagerClient.addConnection(191)]: end of adding connection driver1-1[localhost:11111] : CONNECTING
+2024-11-07 12:53:34,242 [DEBUG][org.jppf.client.AbstractGenericClient.newConnection(293)]: end of connection [driver1-1] created
+2024-11-07 12:53:34,242 [DEBUG][org.jppf.client.TaskServerConnectionHandler.init(78)]: [client: driver1-1 - TasksServer] Attempting connection to the task server at localhost:11111
+2024-11-07 12:53:34,242 [DEBUG][org.jppf.comm.socket.SocketInitializerImpl.initializeSocket(69)]: SocketInitializerImpl[localhost:11111] about to close socket wrapper
+2024-11-07 12:53:35,250 [DEBUG][org.jppf.comm.socket.AbstractSocketWrapper.open(284)]: getReceiveBufferSize() = 131072
+2024-11-07 12:53:35,250 [DEBUG][org.jppf.client.TaskServerConnectionHandler.init(82)]: sending JPPF identifier
+2024-11-07 12:53:35,251 [DEBUG][org.jppf.client.BaseJPPFClientConnection.sendHandshakeJob(191)]: JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=CONNECTING] sending handshake job, uuidPath=TraversalList[position=-1, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73]]
+2024-11-07 12:53:35,268 [DEBUG][org.jppf.client.BaseJPPFClientConnection.receiveBundleAndResults(251)]: JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=CONNECTING] : received bundle JPPFTaskBundle[name=handshake job, uuid=handshake job, initialTaskCount=0, taskCount=0, bundleUuid=null, uuidPath=TraversalList[position=0, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73, 3B58E046-6FD6-0219-CAB6-3869AE1F79DB]]], positions=
+2024-11-07 12:53:35,272 [DEBUG][org.jppf.client.AbstractConnectionPool.add(78)]: adding JMXDriverConnectionWrapper[url=service:jmx:jmxmp://127.0.0.1:11198, connected=false, local=false, secure=false] to JMXConnectionPool[coreSize=1, maxSize=1, connectionCount=0, coreConnections=0]
+2024-11-07 12:53:35,273 [DEBUG][org.jppf.client.TaskServerConnectionHandler.init(91)]: [client: driver1-1 - TasksServer] Reconnected to the JPPF task server
+2024-11-07 12:53:35,273 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - TasksServer' status changing from CONNECTING to ACTIVE
+2024-11-07 12:53:35,273 [DEBUG][org.jppf.management.JMXConnectionThread.run(55)]: 127.0.0.1:11198 about to perform connection attempts
+2024-11-07 12:53:35,273 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from CONNECTING to ACTIVE
+2024-11-07 12:53:35,274 [DEBUG][org.jppf.client.JPPFClientConnectionImpl.init(103)]: connection [driver1-1] status=ACTIVE
+2024-11-07 12:53:35,274 [DEBUG][org.jppf.client.balancer.queue.TaskQueueChecker.dispatch(204)]: 1 channels idle
+2024-11-07 12:53:35,275 [DEBUG][org.jppf.client.AbstractJPPFClient.addClientConnection(230)]: adding connection driver1-1[localhost:11111] : ACTIVE
+2024-11-07 12:53:35,275 [DEBUG][org.jppf.client.JPPFClientConnectionImpl.init(107)]: connection [driver1-1] added to the client pool
+2024-11-07 12:53:35,275 [DEBUG][org.jppf.client.balancer.queue.TaskQueueChecker.findIdleChannelIndex(271)]: found 1 acceptable channels
+2024-11-07 12:53:35,275 [DEBUG][org.jppf.client.balancer.queue.TaskQueueChecker.dispatch(215)]: channel found for bundle: ChannelWrapperRemote[channel=driver1-1[localhost:11111] : ACTIVE]
+2024-11-07 12:53:35,275 [DEBUG][org.jppf.client.balancer.queue.TaskQueueChecker.dispatchJobToChannel(283)]: dispatching jobUuid=31563BF4-DD01-FF18-F968-F329E228FE22 to channel ChannelWrapperRemote[channel=driver1-1[localhost:11111] : ACTIVE], connectionUuid=
+2024-11-07 12:53:35,276 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.nextBundle(147)]: requesting bundle with 1000000 tasks, next bundle has 10 tasks
+2024-11-07 12:53:35,277 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.removeBundle(199)]: removing bundle from queue, jobId=Lucky tickets job
+2024-11-07 12:53:35,277 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.nextBundle(168)]: Maps size information: priorityMap[shallow size=0, total elements=0] - sizeMap[shallow size=0, total elements=0]
+2024-11-07 12:53:35,277 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - TasksServer' status changing from ACTIVE to EXECUTING
+2024-11-07 12:53:35,277 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from ACTIVE to EXECUTING
+2024-11-07 12:53:35,278 [DEBUG][org.jppf.client.JPPFJob.fireJobEvent(255)]: firing JOB_START event with 0 tasks for JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=0, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:53:35,279 [DEBUG][org.jppf.client.JPPFResultCollector.setStatus(109)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] status changing from 'PENDING' to 'EXECUTING'
+2024-11-07 12:53:35,279 [DEBUG][org.jppf.client.JPPFResultCollector.fireStatusChangeEvent(144)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] fire status changed event for 'EXECUTING'
+2024-11-07 12:53:35,279 [DEBUG][org.jppf.client.JPPFJob.fireJobEvent(255)]: firing JOB_DISPATCH event with 10 tasks for JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=0, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:53:35,280 [DEBUG][org.jppf.client.AbstractGenericClient.registerClassLoader(85)]: registered sun.misc.Launcher$AppClassLoader@18b4aac2
+2024-11-07 12:53:35,290 [DEBUG][org.jppf.client.AbstractClassServerDelegate.processNextRequest(156)]: [driver1-1 - ClassServer] resource requested: JPPFResourceWrapper[dynamic=true, name=task.LuckyTicketsTask.class, state=PROVIDER_REQUEST, uuidPath=TraversalList[position=0, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73, 3B58E046-6FD6-0219-CAB6-3869AE1F79DB]], callableID=-1]
+2024-11-07 12:53:35,290 [DEBUG][org.jppf.client.AbstractClassServerDelegate.processNextRequest(159)]: [driver1-1 - ClassServer] using classloaders=[sun.misc.Launcher$AppClassLoader@18b4aac2]
+2024-11-07 12:53:35,290 [DEBUG][org.jppf.classloader.AbstractResourceProvider.getResource(78)]: resource [task.LuckyTicketsTask.class] found
+2024-11-07 12:53:35,290 [DEBUG][org.jppf.client.AbstractClassServerDelegate.processNextRequest(177)]: [driver1-1 - ClassServer] found resource: task.LuckyTicketsTask.class (5804 bytes)
+2024-11-07 12:53:35,291 [DEBUG][org.jppf.client.AbstractClassServerDelegate.writeResource(125)]: [driver1-1 - ClassServer] data sent to the server
+2024-11-07 12:53:35,291 [DEBUG][org.jppf.client.AbstractClassServerDelegate.readResource(113)]: [driver1-1 - ClassServer] reading next resource ...
+2024-11-07 12:53:35,295 [DEBUG][org.jppf.management.JMXConnectionWrapper.performConnection(229)]: 127.0.0.1:11198 JMX connection successfully established
+2024-11-07 12:53:35,295 [DEBUG][org.jppf.management.JMXConnectionThread.run(57)]: 127.0.0.1:11198 about to suspend connection attempts
+2024-11-07 12:54:29,995 [DEBUG][org.jppf.client.BaseJPPFClientConnection.receiveBundleAndResults(251)]: JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=EXECUTING] : received bundle JPPFTaskBundle[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, initialTaskCount=10, taskCount=8, bundleUuid=null, uuidPath=TraversalList[position=0, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73, 3B58E046-6FD6-0219-CAB6-3869AE1F79DB]]], positions=0 7 2 6 5 3 1 4
+2024-11-07 12:54:29,997 [DEBUG][org.jppf.client.balancer.ChannelWrapperRemote.run(224)]: received 8 tasks from server, first position=0
+2024-11-07 12:54:29,997 [DEBUG][org.jppf.client.balancer.ClientJob.resultsReceived(252)]: received 8 results for bundle [jobId=Lucky tickets job, jobUuid=31563BF4-DD01-FF18-F968-F329E228FE22, initialTaskCount=10, taskCount=10, requeue=false, cancelled=false]
+2024-11-07 12:54:29,999 [DEBUG][org.jppf.client.JobResults.addResults(91)]: adding 8 results
+2024-11-07 12:54:29,999 [DEBUG][org.jppf.client.JPPFResultCollector.resultsReceived(82)]: Received results for 8 tasks, pendingCount=2, count=10, jobResults=JobResults[size=8, positions=[0, 1, 2, 3, 4, 5, 6, 7]]
+2024-11-07 12:54:30,000 [DEBUG][org.jppf.client.JPPFJob.fireJobEvent(255)]: firing JOB_RETURN event with 8 tasks for JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=8, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:54:30,000 [DEBUG][org.jppf.client.AbstractGenericClient.unregister(95)]: unregistering 31563BF4-DD01-FF18-F968-F329E228FE22
+2024-11-07 12:55:02,156 [DEBUG][org.jppf.client.BaseJPPFClientConnection.receiveBundleAndResults(251)]: JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=EXECUTING] : received bundle JPPFTaskBundle[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, initialTaskCount=10, taskCount=2, bundleUuid=null, uuidPath=TraversalList[position=0, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73, 3B58E046-6FD6-0219-CAB6-3869AE1F79DB]]], positions=8 9
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.balancer.ChannelWrapperRemote.run(224)]: received 2 tasks from server, first position=8
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.balancer.ClientJob.resultsReceived(252)]: received 2 results for bundle [jobId=Lucky tickets job, jobUuid=31563BF4-DD01-FF18-F968-F329E228FE22, initialTaskCount=10, taskCount=10, requeue=false, cancelled=false]
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.JobResults.addResults(91)]: adding 2 results
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.JPPFResultCollector.resultsReceived(82)]: Received results for 2 tasks, pendingCount=0, count=10, jobResults=JobResults[size=10, positions=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.JPPFJob.fireJobEvent(255)]: firing JOB_RETURN event with 2 tasks for JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=10, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:55:02,157 [DEBUG][org.jppf.client.JPPFJob.fireJobEvent(255)]: firing JOB_END event with 2 tasks for JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=10, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc]
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.AbstractGenericClient.unregister(95)]: unregistering 31563BF4-DD01-FF18-F968-F329E228FE22
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.balancer.ClientJob.taskCompleted(316)]: bundle=[jobId=Lucky tickets job, jobUuid=31563BF4-DD01-FF18-F968-F329E228FE22, initialTaskCount=10, taskCount=10, requeue=false, cancelled=false], exception=null for ClientJob[job=JPPFJob[name=Lucky tickets job, uuid=31563BF4-DD01-FF18-F968-F329E228FE22, blocking=true, nbTasks=10, nbResults=10, jobSLA=org.jppf.node.protocol.JPPFJobSLA@2437c6dc], jobStatus=EXECUTING, broadcastUUID=null, executing=true, nbTasks=0]
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.balancer.queue.JPPFPriorityQueue.removeBundle(199)]: removing bundle from queue, jobId=Lucky tickets job
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.AbstractGenericClient.close(322)]: closing JPPF client
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.JPPFResultCollector.setStatus(109)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] status changing from 'EXECUTING' to 'COMPLETE'
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.JPPFResultCollector.fireStatusChangeEvent(144)]: job [31563BF4-DD01-FF18-F968-F329E228FE22] fire status changed event for 'COMPLETE'
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.AbstractGenericClient.close(324)]: unregistering startup classes
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.setStatus(119)]: connection 'driver1-1 - TasksServer' status changing from EXECUTING to ACTIVE
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from EXECUTING to ACTIVE
+2024-11-07 12:55:02,158 [DEBUG][org.jppf.client.AbstractGenericClient.close(331)]: closing job manager
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.balancer.JobManagerClient.close(368)]: closing org.jppf.client.balancer.JobManagerClient@1ef7fe8e
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.AbstractGenericClient.close(336)]: closing broadcast receiver
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.AbstractGenericClient.close(341)]: closing executor
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.AbstractGenericClient.close(346)]: clearing registered class loaders
+2024-11-07 12:55:02,159 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.setStatus(106)]: connection 'driver1-1' status changing from ACTIVE to CLOSED
+2024-11-07 12:55:02,160 [DEBUG][org.jppf.client.AbstractGenericClient.connectionFailed(303)]: Connection [driver1-1] CLOSED
+2024-11-07 12:55:02,160 [DEBUG][org.jppf.client.AbstractJPPFClient.removeClientConnection(248)]: removing connection driver1-1[localhost:11111] : CLOSED
+2024-11-07 12:55:02,160 [DEBUG][org.jppf.client.AbstractConnectionPool.remove(89)]: removing driver1-1[localhost:11111] : CLOSED from JPPFConnectionPool[name=driver1, id=1, coreSize=1, maxSize=1, priority=10, sslEnabled=false, client=org.jppf.client.JPPFClient@676b4ee6]
+2024-11-07 12:55:02,160 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.close(231)]: closing connection JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=CLOSED]
+2024-11-07 12:55:02,160 [DEBUG][org.jppf.client.BaseJPPFClientConnection.sendCloseConnectionCommand(215)]: JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=CLOSED] sending close command job, uuidPath=TraversalList[position=-1, list=[1ABFFA5E-5B44-7DD6-828E-525608589B73]]
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.close(241)]: closing task server connection driver1-1[localhost:11111] : CLOSED
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.close(194)]: closing driver1-1 - TasksServer
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.comm.socket.SocketInitializerImpl.close(101)]: SocketInitializerImpl[localhost:11111] closing socket initializer
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.close(207)]: driver1-1 - TasksServer closed
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.close(243)]: closing class server connection driver1-1[localhost:11111] : CLOSED
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractClassServerDelegate.close(191)]: closing driver1-1 - ClassServer
+2024-11-07 12:55:02,161 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.close(194)]: closing driver1-1 - ClassServer
+2024-11-07 12:55:02,162 [DEBUG][org.jppf.comm.socket.SocketInitializerImpl.close(101)]: SocketInitializerImpl[localhost:11111] closing socket initializer
+2024-11-07 12:55:02,162 [DEBUG][org.jppf.client.AbstractClientConnectionHandler.close(207)]: driver1-1 - ClassServer closed
+2024-11-07 12:55:02,162 [DEBUG][org.jppf.client.AbstractClassServerDelegate.close(194)]: driver1-1 - ClassServer closed
+2024-11-07 12:55:02,162 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.close(245)]: closing jmx connection driver1-1[localhost:11111] : CLOSED
+2024-11-07 12:55:02,162 [DEBUG][org.jppf.client.AbstractJPPFClientConnection.close(251)]: connection JPPFClientConnectionImpl[connectionUuid=1ABFFA5E-5B44-7DD6-828E-525608589B73_1, status=CLOSED] closed
